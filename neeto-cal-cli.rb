@@ -5,20 +5,20 @@
 class NeetoCalCli < Formula
   desc "NeetoCal CLI — manage your calendar from the terminal"
   homepage "https://neetocal.com"
-  version "7.0.0"
+  version "8.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neetozone/neeto-cal-cli/releases/download/v7.0.0/neeto-cal-cli_7.0.0_darwin_amd64.tar.gz"
-      sha256 "a69465a16fd776b4ce175bbea64e6e5e54943319f47d36c3c0a85799f4016da4"
+      url "https://github.com/neetozone/neeto-cal-cli/releases/download/v8.0.0/neeto-cal-cli_8.0.0_darwin_amd64.tar.gz"
+      sha256 "65a6e93ab7b59f293f72174ab9b2b2d7a2a796453829d30f8fb9f59601f7d324"
 
       def install
         bin.install "neetocal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neetozone/neeto-cal-cli/releases/download/v7.0.0/neeto-cal-cli_7.0.0_darwin_arm64.tar.gz"
-      sha256 "fb21edb8d4696c3d58d67d64bed62f49dd063c6b211329ad93edfd3508bfdc39"
+      url "https://github.com/neetozone/neeto-cal-cli/releases/download/v8.0.0/neeto-cal-cli_8.0.0_darwin_arm64.tar.gz"
+      sha256 "7c6540462109a10035518c04cdb1cdabd10a92580067132b82b01b645d52997f"
 
       def install
         bin.install "neetocal"
@@ -29,8 +29,8 @@ class NeetoCalCli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/neetozone/neeto-cal-cli/releases/download/v7.0.0/neeto-cal-cli_7.0.0_linux_amd64.tar.gz"
-        sha256 "1758a5d9b3a8d217b6203da1617b3acaad0ee96806277b38a3aa98c957d8be27"
+        url "https://github.com/neetozone/neeto-cal-cli/releases/download/v8.0.0/neeto-cal-cli_8.0.0_linux_amd64.tar.gz"
+        sha256 "dc4e265a14be865eb0444efcd771c12f285edf7bd88f6af1df1a018fcbcdf2e9"
 
         def install
           bin.install "neetocal"
@@ -39,8 +39,8 @@ class NeetoCalCli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/neetozone/neeto-cal-cli/releases/download/v7.0.0/neeto-cal-cli_7.0.0_linux_arm64.tar.gz"
-        sha256 "8a42d101d86ba85b1c1b69b6fb54128268b146c253f0ccd07a00d81eea89b408"
+        url "https://github.com/neetozone/neeto-cal-cli/releases/download/v8.0.0/neeto-cal-cli_8.0.0_linux_arm64.tar.gz"
+        sha256 "7e028d6001465e8a5e979df96a99f5c81e8f2cbdea486fc1ed6e06c566130ccb"
 
         def install
           bin.install "neetocal"
