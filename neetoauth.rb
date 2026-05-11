@@ -10,7 +10,7 @@ class Neetoauth < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoAuth/v0.1.0/neeto-auth-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e93a00c45d90b9d445e0e12fd3a8bb5a66b18f5edf9ebd2822be789e617343b1"
+      sha256 "5d3e75650d91765d53eb1b8132b7b555b646de933f32b6f5bb1040dfd86c66ee"
 
       def install
         bin.install "neetoauth"
@@ -18,7 +18,7 @@ class Neetoauth < Formula
     end
     if Hardware::CPU.arm?
       url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoAuth/v0.1.0/neeto-auth-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1806de3404c7f907af2b65dc1b20aba9eedc28aae286ddb8bcdcbba90c03788a"
+      sha256 "23617bb0b76d6650aa1a0d829d65562564b76638d4b581162cdc461c28687965"
 
       def install
         bin.install "neetoauth"
@@ -30,7 +30,7 @@ class Neetoauth < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoAuth/v0.1.0/neeto-auth-cli_0.1.0_linux_amd64.tar.gz"
-        sha256 "c75667f735c087a76f27ec8f85e4ecdbc807d5ab9c91c9e8d15feeb234e4cf6b"
+        sha256 "d3822b6c862553bf8379f4962ff9d69ded7f7fede272688909eae23db13a6afa"
 
         def install
           bin.install "neetoauth"
@@ -40,7 +40,7 @@ class Neetoauth < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoAuth/v0.1.0/neeto-auth-cli_0.1.0_linux_arm64.tar.gz"
-        sha256 "1a0ad4f4e53c74ccd6c5152d4eecf0be1dd3bc8df99bce6f0ef0c1cfb69405c5"
+        sha256 "f8d37682d84f1c149c88adcb55724e77ce771382c195e9c9b046d2978652c392"
 
         def install
           bin.install "neetoauth"
