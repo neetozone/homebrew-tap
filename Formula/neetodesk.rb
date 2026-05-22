@@ -5,20 +5,20 @@
 class Neetodesk < Formula
   desc "NeetoDesk CLI"
   homepage "https://neetodesk.com"
-  version "5.0.0"
+  version "6.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoDesk/v5.0.0/neeto-desk-cli_5.0.0_darwin_amd64.tar.gz"
-      sha256 "d44050a1636764406897e202dcc27817d642a33bf9284c06f93b597abbc15193"
+      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoDesk/v6.0.0/neeto-desk-cli_6.0.0_darwin_amd64.tar.gz"
+      sha256 "976b32a1709586f42c1f6e9d92971483852021dc1f9c630aef5a9faff15472a6"
 
       def install
         bin.install "neetodesk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoDesk/v5.0.0/neeto-desk-cli_5.0.0_darwin_arm64.tar.gz"
-      sha256 "a89c0337053c7d99849799ec9e2fd65580f0436bc2923cb2a55fbff11acd6e3c"
+      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoDesk/v6.0.0/neeto-desk-cli_6.0.0_darwin_arm64.tar.gz"
+      sha256 "8a35a6a5c67a6314cdd182a365906d25bbc8b3dc76c6323f31950fcddceab0ab"
 
       def install
         bin.install "neetodesk"
@@ -29,8 +29,8 @@ class Neetodesk < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoDesk/v5.0.0/neeto-desk-cli_5.0.0_linux_amd64.tar.gz"
-        sha256 "4f326aee72612f955fe12c5c5e41e44ed0f6a8b12176a1ad555015a7b7062846"
+        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoDesk/v6.0.0/neeto-desk-cli_6.0.0_linux_amd64.tar.gz"
+        sha256 "a3165f6b9be381ea7cab705c12f102a2549fac29b56693ba9465bac16ab6adf1"
 
         def install
           bin.install "neetodesk"
@@ -39,8 +39,8 @@ class Neetodesk < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoDesk/v5.0.0/neeto-desk-cli_5.0.0_linux_arm64.tar.gz"
-        sha256 "4346ce35baf7c95e1ab4ebb6413ff47620d5a5911c6c1f8216936bfdcef57505"
+        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoDesk/v6.0.0/neeto-desk-cli_6.0.0_linux_arm64.tar.gz"
+        sha256 "f2ac0111c10079710606766c8ad8b4b246cc7c54c779cb2326b9b5ed47354c4e"
 
         def install
           bin.install "neetodesk"
