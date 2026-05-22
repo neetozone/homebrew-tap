@@ -10,7 +10,7 @@ class Neetokb < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.0/neeto-kb-cli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "30fbbb794667ffec62b99e5072fd1b3ad0cd042d36cf4c8fb1af5aba8558e3a3"
+      sha256 "326ecc01f4d9a842bd96b9956fe18ed0d397dedb10ae1f3554e714104b5454d3"
 
       def install
         bin.install "neetokb"
@@ -18,7 +18,7 @@ class Neetokb < Formula
     end
     if Hardware::CPU.arm?
       url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.0/neeto-kb-cli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "5e0d95b252b20604eddc3cc43c31106af8f07f59f6d37c797132e445f2d768ee"
+      sha256 "b16252c364eba4c9a23da4491029e9edfdaa49e65427d0f72b6592e36cafaa50"
 
       def install
         bin.install "neetokb"
@@ -30,7 +30,7 @@ class Neetokb < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.0/neeto-kb-cli_1.0.0_linux_amd64.tar.gz"
-        sha256 "54554b2dd5de66f35410888e5dc3a647dec6a620866b1a4e119fdfb830fa4d5d"
+        sha256 "8696d92756ff6d7dd5040e0868112cc0be83db60f6cbddd3b2ba0dd12c1c1736"
 
         def install
           bin.install "neetokb"
@@ -40,7 +40,7 @@ class Neetokb < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.0/neeto-kb-cli_1.0.0_linux_arm64.tar.gz"
-        sha256 "89f87b24c35b5eb7ad6f43d1636271b85d5a3a7ff30c02c3be4b677dd168c12f"
+        sha256 "6f071afd16b31e5f210ee026a217b61d247c584d051a212a420c05d868585c92"
 
         def install
           bin.install "neetokb"
