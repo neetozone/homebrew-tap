@@ -5,20 +5,20 @@
 class Neetoinvoice < Formula
   desc "NeetoInvoice CLI"
   homepage "https://neetoinvoice.com"
-  version "3.0.0"
+  version "4.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoInvoice/v3.0.0/neeto-invoice-cli_3.0.0_darwin_amd64.tar.gz"
-      sha256 "31c5ffa0348be837605cde748e266c46de825ccacccba20f263d25f562d0e23b"
+      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoInvoice/v4.0.0/neeto-invoice-cli_4.0.0_darwin_amd64.tar.gz"
+      sha256 "661c05d82742a6a8147a2ab4f05bf4f315f6a0362def742ed390b9fa25bb580e"
 
       def install
         bin.install "neetoinvoice"
       end
     end
     if Hardware::CPU.arm?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoInvoice/v3.0.0/neeto-invoice-cli_3.0.0_darwin_arm64.tar.gz"
-      sha256 "d2b2a85e9d0f2fe9f602e2a74efa401f529ed28639a8c0380507ccf16169c944"
+      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoInvoice/v4.0.0/neeto-invoice-cli_4.0.0_darwin_arm64.tar.gz"
+      sha256 "10105ea17e2adf010d04ea96c0a3de375cec9a94b3bbd99e6d51d145f2cae08a"
 
       def install
         bin.install "neetoinvoice"
@@ -29,8 +29,8 @@ class Neetoinvoice < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoInvoice/v3.0.0/neeto-invoice-cli_3.0.0_linux_amd64.tar.gz"
-        sha256 "3481e49d1a60731ee52df608640bcd3448e81a16c92feaaca3abe249ec2e0665"
+        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoInvoice/v4.0.0/neeto-invoice-cli_4.0.0_linux_amd64.tar.gz"
+        sha256 "78ff79ecde4240f98db80cfbec0b322feadd16db35c632e34e5d5da8590e3a16"
 
         def install
           bin.install "neetoinvoice"
@@ -39,8 +39,8 @@ class Neetoinvoice < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoInvoice/v3.0.0/neeto-invoice-cli_3.0.0_linux_arm64.tar.gz"
-        sha256 "bb26fd967787f92274c8fdf1b9074ccb976dadf8578d43edf1a26e346dbfe8dc"
+        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoInvoice/v4.0.0/neeto-invoice-cli_4.0.0_linux_arm64.tar.gz"
+        sha256 "b4c0b3089e2ad183d8ad14f0128602d34f0e6b68b5e6714ae072cc81f0c30250"
 
         def install
           bin.install "neetoinvoice"
