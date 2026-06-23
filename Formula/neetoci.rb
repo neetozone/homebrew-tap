@@ -10,7 +10,7 @@ class Neetoci < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoCI/v1.0.0/neeto-ci-cli-v2_1.0.0_darwin_amd64.tar.gz"
-      sha256 "231aa0406be7a55db957e2a577489e8a6c465d4cad7399272629c4be38c94603"
+      sha256 "1ebb62063f061500b8d923a177ae5d9957e25a6984b846460f9847170e7cb7da"
 
       def install
         bin.install "neetoci"
@@ -18,7 +18,7 @@ class Neetoci < Formula
     end
     if Hardware::CPU.arm?
       url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoCI/v1.0.0/neeto-ci-cli-v2_1.0.0_darwin_arm64.tar.gz"
-      sha256 "93c5de9575d0d204aae45403739619350737dc2e553681ffa3b80cf3da0765b0"
+      sha256 "12739f6167fc0549e146d46ba4203d51ae0e569a497526d34281d872b2724b7b"
 
       def install
         bin.install "neetoci"
@@ -30,7 +30,7 @@ class Neetoci < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoCI/v1.0.0/neeto-ci-cli-v2_1.0.0_linux_amd64.tar.gz"
-        sha256 "2c83022af6a5839cdc6740cd3f61fc3668aae3d451ff33b4d273282d5462cad1"
+        sha256 "6e2757ec5ca09bf7f2c572a1075dabe1963a051d1c53837ded0d73993a561c44"
 
         def install
           bin.install "neetoci"
@@ -40,7 +40,7 @@ class Neetoci < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoCI/v1.0.0/neeto-ci-cli-v2_1.0.0_linux_arm64.tar.gz"
-        sha256 "89d09834d90f990d4c290035a39d59aad6cb6964af40aa1c0fbd0e259fd65698"
+        sha256 "c59b33ecbedee5d549806ba8954e70614bf33de2ef96f3e660f550beca1bb1df"
 
         def install
           bin.install "neetoci"
