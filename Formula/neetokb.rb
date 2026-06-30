@@ -5,20 +5,20 @@
 class Neetokb < Formula
   desc "NeetoKB CLI"
   homepage "https://neetokb.com"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.1/neeto-kb-cli_1.0.1_darwin_amd64.tar.gz"
-      sha256 "71cf015b58d3b3e3c71025bcf9673621a5cd7c9053688de9bc36867a73b2a4c4"
+      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.2/neeto-kb-cli_1.0.2_darwin_amd64.tar.gz"
+      sha256 "cc41ff44560df3a4faf7e9f0bc68f8dc1389a3d521168f553f258a8bd63adb6d"
 
       def install
         bin.install "neetokb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.1/neeto-kb-cli_1.0.1_darwin_arm64.tar.gz"
-      sha256 "2d7c9770bc3897852531ae9411374b27671747c86eba1546f8f9ba8a2b9d6760"
+      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.2/neeto-kb-cli_1.0.2_darwin_arm64.tar.gz"
+      sha256 "d2f7db07a467b60fb05889aa28e92db0d5bff0d277d09c6ff2673fc2d0a3b3d0"
 
       def install
         bin.install "neetokb"
@@ -29,8 +29,8 @@ class Neetokb < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.1/neeto-kb-cli_1.0.1_linux_amd64.tar.gz"
-        sha256 "97868c22506fa08150b6173128a08b391adf5f0279de6aacc96664c046fabd4f"
+        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.2/neeto-kb-cli_1.0.2_linux_amd64.tar.gz"
+        sha256 "d63df2446f14121e7bae2f849beb4bf934dc3f61f22ea414e94fd6c49ae004eb"
 
         def install
           bin.install "neetokb"
@@ -39,8 +39,8 @@ class Neetokb < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.1/neeto-kb-cli_1.0.1_linux_arm64.tar.gz"
-        sha256 "4121242e7f1e2d9b8e979ae11656293d74db2e0751a03560fc008ee155c737a3"
+        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoKB/v1.0.2/neeto-kb-cli_1.0.2_linux_arm64.tar.gz"
+        sha256 "ddc70a5144d4416f441632b452e26d15d536119a6d1d35dbde0d0afe77877807"
 
         def install
           bin.install "neetokb"
