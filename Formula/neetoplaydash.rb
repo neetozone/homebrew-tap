@@ -5,20 +5,20 @@
 class Neetoplaydash < Formula
   desc "NeetoPlaydash CLI"
   homepage "https://neetoplaydash.com"
-  version "1.0.4"
+  version "1.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoPlaydash/v1.0.4/neeto-playdash-cli_1.0.4_darwin_amd64.tar.gz"
-      sha256 "5ab1f16a4cd0a59beb182bb460c3b8500ea4de7c6215e9cb75972b2571c11a3f"
+      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoPlaydash/v1.0.5/neeto-playdash-cli_1.0.5_darwin_amd64.tar.gz"
+      sha256 "bca8cdc4bcf87f8b0a208bf57afc9e3e448a7628242e6cdf85cba3a8c4008f56"
 
       def install
         bin.install "neetoplaydash"
       end
     end
     if Hardware::CPU.arm?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoPlaydash/v1.0.4/neeto-playdash-cli_1.0.4_darwin_arm64.tar.gz"
-      sha256 "ea5c576f8ca2ca3201f54f447b8f57cfd9cfb478f96bcdb71bc25a4520318ffa"
+      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoPlaydash/v1.0.5/neeto-playdash-cli_1.0.5_darwin_arm64.tar.gz"
+      sha256 "b173d6397a0bfb3a4135a3ad21c8e1c565fe4b42d1e386a4f34a7bd3aad39e03"
 
       def install
         bin.install "neetoplaydash"
@@ -29,8 +29,8 @@ class Neetoplaydash < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoPlaydash/v1.0.4/neeto-playdash-cli_1.0.4_linux_amd64.tar.gz"
-        sha256 "51fbe587774a1c722b1c47ca0024f77bec4944ff42082589261aab214e3b7a0a"
+        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoPlaydash/v1.0.5/neeto-playdash-cli_1.0.5_linux_amd64.tar.gz"
+        sha256 "0a9742763c12385ddc1b34e12ae188c0131b080e0899871221159fa1ec96e7e8"
 
         def install
           bin.install "neetoplaydash"
@@ -39,8 +39,8 @@ class Neetoplaydash < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoPlaydash/v1.0.4/neeto-playdash-cli_1.0.4_linux_arm64.tar.gz"
-        sha256 "a44eec35397efaa1247e9a25b037e2723fd321f389dbd5d4139111d4140819da"
+        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoPlaydash/v1.0.5/neeto-playdash-cli_1.0.5_linux_arm64.tar.gz"
+        sha256 "b132d5276a50739cecef7788d1f640baa07a6ef06f2893d0b42dfca6b5ca52ef"
 
         def install
           bin.install "neetoplaydash"
