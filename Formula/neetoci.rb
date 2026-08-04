@@ -5,20 +5,20 @@
 class Neetoci < Formula
   desc "NeetoCI CLI"
   homepage "https://neetoci.com"
-  version "1.0.5"
+  version "1.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoCI/v1.0.5/neeto-ci-cli-v2_1.0.5_darwin_amd64.tar.gz"
-      sha256 "8b9754ce37bb98d1ff295caf6475c2fe71e31449b1320259b4e50292f1c449e0"
+      url "https://downloads.neeto.com/cli/NeetoCI/v1.0.6/neeto-ci-cli-v2_1.0.6_darwin_amd64.tar.gz"
+      sha256 "8a41c9e1af707a6e06da0fc981576dffcf6c96e1c706662bf5f93d2762636e09"
 
       def install
         bin.install "neetoci"
       end
     end
     if Hardware::CPU.arm?
-      url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoCI/v1.0.5/neeto-ci-cli-v2_1.0.5_darwin_arm64.tar.gz"
-      sha256 "c243ddfc483aa678867eb8c7f6b7024be5579defcd0a7267bf56de73ab18bc60"
+      url "https://downloads.neeto.com/cli/NeetoCI/v1.0.6/neeto-ci-cli-v2_1.0.6_darwin_arm64.tar.gz"
+      sha256 "a2c20f2aa70a918fd2091897b4c8d2d6416c1f7fc13efd65dc18a5229ef68f32"
 
       def install
         bin.install "neetoci"
@@ -29,8 +29,8 @@ class Neetoci < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoCI/v1.0.5/neeto-ci-cli-v2_1.0.5_linux_amd64.tar.gz"
-        sha256 "8d79343e21deb61808552a7b61ce065cfafa64a850b576966d3460f070eeab7f"
+        url "https://downloads.neeto.com/cli/NeetoCI/v1.0.6/neeto-ci-cli-v2_1.0.6_linux_amd64.tar.gz"
+        sha256 "e1cc51598572742e237311d1480d7caa466954b1838a542ebcd864c03b28005d"
 
         def install
           bin.install "neetoci"
@@ -39,8 +39,8 @@ class Neetoci < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://neeto-downloads.s3.amazonaws.com/cli/NeetoCI/v1.0.5/neeto-ci-cli-v2_1.0.5_linux_arm64.tar.gz"
-        sha256 "cc25fc10e3993e333ae65950821e667d7933b85b2df7bbfac4f7cb4892ef680d"
+        url "https://downloads.neeto.com/cli/NeetoCI/v1.0.6/neeto-ci-cli-v2_1.0.6_linux_arm64.tar.gz"
+        sha256 "7e666831af5fa3060ed0240c1e3f3cda0e920c5bad0ff861dadf894c1d9d2e2c"
 
         def install
           bin.install "neetoci"
