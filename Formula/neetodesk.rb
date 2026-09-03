@@ -5,20 +5,20 @@
 class Neetodesk < Formula
   desc "NeetoDesk CLI"
   homepage "https://neetodesk.com"
-  version "1.0.9"
+  version "1.0.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoDesk/v1.0.9/neeto-desk-cli_1.0.9_darwin_amd64.tar.gz"
-      sha256 "48773417920fd774f3aa6d08669cc8f0a29179b4b94f04da98f16fa5c5374a06"
+      url "https://downloads.neeto.com/cli/NeetoDesk/v1.0.10/neeto-desk-cli_1.0.10_darwin_amd64.tar.gz"
+      sha256 "07e29c75c8343222b5a02bf4493afa7a9372664b4bd7cf1277e6de3adf74e59b"
 
       def install
         bin.install "neetodesk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoDesk/v1.0.9/neeto-desk-cli_1.0.9_darwin_arm64.tar.gz"
-      sha256 "35fdb1f50aa4bbe55bb2aaad45d32ed0edf45129d54abb197eaa343d3ba8622e"
+      url "https://downloads.neeto.com/cli/NeetoDesk/v1.0.10/neeto-desk-cli_1.0.10_darwin_arm64.tar.gz"
+      sha256 "12fb8b9d2f802c7a959e903451d1b12f9d0acb329f913661233ee6e152949d2e"
 
       def install
         bin.install "neetodesk"
@@ -29,8 +29,8 @@ class Neetodesk < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoDesk/v1.0.9/neeto-desk-cli_1.0.9_linux_amd64.tar.gz"
-        sha256 "8baea5f2f472b9fd35fff8fb1497087026bdc77ff45cf5038e27e1ff4a5165ec"
+        url "https://downloads.neeto.com/cli/NeetoDesk/v1.0.10/neeto-desk-cli_1.0.10_linux_amd64.tar.gz"
+        sha256 "c2059e15fdb6c48718ad02b355dc6897edb95443186b1786937df6e6d045ed7a"
 
         def install
           bin.install "neetodesk"
@@ -39,8 +39,8 @@ class Neetodesk < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoDesk/v1.0.9/neeto-desk-cli_1.0.9_linux_arm64.tar.gz"
-        sha256 "991d86c8ed7e6fde0191470e0627f00e03901998d7f4f36057767d8c9be7aad1"
+        url "https://downloads.neeto.com/cli/NeetoDesk/v1.0.10/neeto-desk-cli_1.0.10_linux_arm64.tar.gz"
+        sha256 "4767f26658b7c75832edb656c95751609c531a1869b98a1bef81f7e2b37a2da3"
 
         def install
           bin.install "neetodesk"
