@@ -5,20 +5,20 @@
 class Neetoplanner < Formula
   desc "NeetoPlanner CLI"
   homepage "https://neetoplanner.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoPlanner/v0.2.1/neeto-planner-cli_0.2.1_darwin_amd64.tar.gz"
-      sha256 "baac0bc502971441c7ecc76b43cb3f71b52322634241b2d01861fce17b9afb5f"
+      url "https://downloads.neeto.com/cli/NeetoPlanner/v0.2.2/neeto-planner-cli_0.2.2_darwin_amd64.tar.gz"
+      sha256 "4202f61e84dc3e916cb27d96cf4353d511924d5e24f8d59d190344234e049694"
 
       def install
         bin.install "neetoplanner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoPlanner/v0.2.1/neeto-planner-cli_0.2.1_darwin_arm64.tar.gz"
-      sha256 "2032cdb4338677d3d385367d2621280d26c7db4fd010233bc5e45463f2296d08"
+      url "https://downloads.neeto.com/cli/NeetoPlanner/v0.2.2/neeto-planner-cli_0.2.2_darwin_arm64.tar.gz"
+      sha256 "70bf7ffa88e6acff2ca3533167981d941a88e3ef374547ece8f856862476085c"
 
       def install
         bin.install "neetoplanner"
@@ -29,8 +29,8 @@ class Neetoplanner < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoPlanner/v0.2.1/neeto-planner-cli_0.2.1_linux_amd64.tar.gz"
-        sha256 "64f12564b84df705de889588e1042e5275e3e4a793785f274d24c6a52c058bd7"
+        url "https://downloads.neeto.com/cli/NeetoPlanner/v0.2.2/neeto-planner-cli_0.2.2_linux_amd64.tar.gz"
+        sha256 "c22f87b181feb332748ddc03d117e7e7e0a92386aeefb9e2b6322472539f5081"
 
         def install
           bin.install "neetoplanner"
@@ -39,8 +39,8 @@ class Neetoplanner < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoPlanner/v0.2.1/neeto-planner-cli_0.2.1_linux_arm64.tar.gz"
-        sha256 "4b42e5b72962254c2b02b640d564ecc58739dc345622b04692271c0561c6812c"
+        url "https://downloads.neeto.com/cli/NeetoPlanner/v0.2.2/neeto-planner-cli_0.2.2_linux_arm64.tar.gz"
+        sha256 "a4a51de9b92b5783ea8ae63e49ad9e4b0cbb269304cd7724ec2ad59484abe91f"
 
         def install
           bin.install "neetoplanner"
