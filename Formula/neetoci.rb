@@ -5,20 +5,20 @@
 class Neetoci < Formula
   desc "NeetoCI CLI"
   homepage "https://neetoci.com"
-  version "1.0.10"
+  version "1.0.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoCI/v1.0.10/neeto-ci-cli-v2_1.0.10_darwin_amd64.tar.gz"
-      sha256 "312571be51ccce769a30cca08b6f467a852bb7fd3b2e6b3ff5e1bb0429ce30a9"
+      url "https://downloads.neeto.com/cli/NeetoCI/v1.0.11/neeto-ci-cli-v2_1.0.11_darwin_amd64.tar.gz"
+      sha256 "5b0a731d4c9344035ea54ada5e378ca19667576f37641802be17c768854598c6"
 
       def install
         bin.install "neetoci"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoCI/v1.0.10/neeto-ci-cli-v2_1.0.10_darwin_arm64.tar.gz"
-      sha256 "76e79b93f8a86523b60723c9c77630e002e9e772cc64a247f55e58669df594cf"
+      url "https://downloads.neeto.com/cli/NeetoCI/v1.0.11/neeto-ci-cli-v2_1.0.11_darwin_arm64.tar.gz"
+      sha256 "86441cd9e9dd0d6814514e0fccf2bec9e59e06a5f8d0831b11feed0a77d5d985"
 
       def install
         bin.install "neetoci"
@@ -29,8 +29,8 @@ class Neetoci < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoCI/v1.0.10/neeto-ci-cli-v2_1.0.10_linux_amd64.tar.gz"
-        sha256 "92d00660d5e27511fe2188436109b490108449d64815f5133e4ac53d0ded3612"
+        url "https://downloads.neeto.com/cli/NeetoCI/v1.0.11/neeto-ci-cli-v2_1.0.11_linux_amd64.tar.gz"
+        sha256 "611be8a901704edd310b29e6436a5ea41eb111b96062d414760c26576f962446"
 
         def install
           bin.install "neetoci"
@@ -39,8 +39,8 @@ class Neetoci < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoCI/v1.0.10/neeto-ci-cli-v2_1.0.10_linux_arm64.tar.gz"
-        sha256 "d01f6c2f08b06f113e4df6c5c6e1f2e38c621f3050ee752d43af0cc07279c95a"
+        url "https://downloads.neeto.com/cli/NeetoCI/v1.0.11/neeto-ci-cli-v2_1.0.11_linux_arm64.tar.gz"
+        sha256 "3d9ecffdef67363151de2d0b85a2f4e4d467242b5996371cf8707969827402de"
 
         def install
           bin.install "neetoci"
