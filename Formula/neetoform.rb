@@ -5,20 +5,20 @@
 class Neetoform < Formula
   desc "NeetoForm CLI"
   homepage "https://neetoform.com"
-  version "1.1.1"
+  version "1.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoForm/v1.1.1/neeto-form-cli_1.1.1_darwin_amd64.tar.gz"
-      sha256 "16679087de973bc34081c0e5b5d5376872036a18c743d07ed4b7c067bfd9543d"
+      url "https://downloads.neeto.com/cli/NeetoForm/v1.1.2/neeto-form-cli_1.1.2_darwin_amd64.tar.gz"
+      sha256 "daccb7f6f7429d5696edc433f77029c36d113a73785b7e0b753a135c4a79c150"
 
       def install
         bin.install "neetoform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoForm/v1.1.1/neeto-form-cli_1.1.1_darwin_arm64.tar.gz"
-      sha256 "14d81d3b3475807d74b3112b629b3da9f90e1b84769841f3f50ff7c0c0f2ada9"
+      url "https://downloads.neeto.com/cli/NeetoForm/v1.1.2/neeto-form-cli_1.1.2_darwin_arm64.tar.gz"
+      sha256 "fce9674e43c55fdf0eeebae22e548a15c010169ae14eaecfb76e37f243018e8b"
 
       def install
         bin.install "neetoform"
@@ -29,8 +29,8 @@ class Neetoform < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoForm/v1.1.1/neeto-form-cli_1.1.1_linux_amd64.tar.gz"
-        sha256 "b92e694c4ab94777a5e4995ee739bdfa818970127053704398e1e20bedf240a1"
+        url "https://downloads.neeto.com/cli/NeetoForm/v1.1.2/neeto-form-cli_1.1.2_linux_amd64.tar.gz"
+        sha256 "5786047b89e1926bd913b6d526bc130711fe582425c050ba691807d7f63833e7"
 
         def install
           bin.install "neetoform"
@@ -39,8 +39,8 @@ class Neetoform < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoForm/v1.1.1/neeto-form-cli_1.1.1_linux_arm64.tar.gz"
-        sha256 "caad3f15b0a57a0efab92a8f62cad6b2da4622408ee4db3664c6ca6dc4ff1f47"
+        url "https://downloads.neeto.com/cli/NeetoForm/v1.1.2/neeto-form-cli_1.1.2_linux_arm64.tar.gz"
+        sha256 "1ab905815ec6616fc267d3431467ba13d966d1746aaf445032180c2b76a7759f"
 
         def install
           bin.install "neetoform"
