@@ -5,20 +5,20 @@
 class Neetorecord < Formula
   desc "NeetoRecord CLI — manage recordings, folders and tags from the terminal"
   homepage "https://neetorecord.com"
-  version "1.4.0"
+  version "1.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoRecord/v1.4.0/neeto-record-cli_1.4.0_darwin_amd64.tar.gz"
-      sha256 "f8881e7af716d83207dcd3a423a3f63fde0f64dfb17ea2619c065a899e8642c1"
+      url "https://downloads.neeto.com/cli/NeetoRecord/v1.4.1/neeto-record-cli_1.4.1_darwin_amd64.tar.gz"
+      sha256 "71e7b27a49a876b8d8bc6809d2b4fd2949fbe10dac87ab8a57c80a2e131f7935"
 
       def install
         bin.install "neetorecord"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoRecord/v1.4.0/neeto-record-cli_1.4.0_darwin_arm64.tar.gz"
-      sha256 "3b9a5b9cf5a1ae61aa4a5beda46e8c69e605fd34f45e9f521680a10aa42604c7"
+      url "https://downloads.neeto.com/cli/NeetoRecord/v1.4.1/neeto-record-cli_1.4.1_darwin_arm64.tar.gz"
+      sha256 "25f0f1990ec354d1e682826a58f30604933c8ca9dca2357df59a4fcf0681abf2"
 
       def install
         bin.install "neetorecord"
@@ -29,8 +29,8 @@ class Neetorecord < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoRecord/v1.4.0/neeto-record-cli_1.4.0_linux_amd64.tar.gz"
-        sha256 "57fb2f7a76559a385c13b319d796031e0733320a1e10c3e07fe4b734455ff988"
+        url "https://downloads.neeto.com/cli/NeetoRecord/v1.4.1/neeto-record-cli_1.4.1_linux_amd64.tar.gz"
+        sha256 "db818ad45590371a3010704db1dd508d7ea47702c320a5dab64219dca7b0d5c5"
 
         def install
           bin.install "neetorecord"
@@ -39,8 +39,8 @@ class Neetorecord < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoRecord/v1.4.0/neeto-record-cli_1.4.0_linux_arm64.tar.gz"
-        sha256 "f919089fc33c246a5f3fc15a90964c13d56195c825d6bbc49fdba0797e53db77"
+        url "https://downloads.neeto.com/cli/NeetoRecord/v1.4.1/neeto-record-cli_1.4.1_linux_arm64.tar.gz"
+        sha256 "1e009579ef3f2e93e0abdfcb99468bb6ad0f4e2b9b8747342a539d9b8f3bd863"
 
         def install
           bin.install "neetorecord"
