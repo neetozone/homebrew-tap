@@ -5,20 +5,20 @@
 class Neetodeploy < Formula
   desc "NeetoDeploy CLI — manage apps, dynos, addons and deployments from the terminal"
   homepage "https://neetodeploy.com"
-  version "3.6.0"
+  version "3.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoDeploy/v3.6.0/neeto-deploy-cli-go_3.6.0_darwin_amd64.tar.gz"
-      sha256 "addcd0ae40733f69d1d4c7f48ca3b60f4ef60a0af74152746c45eb3b61406c0e"
+      url "https://downloads.neeto.com/cli/NeetoDeploy/v3.6.1/neeto-deploy-cli-go_3.6.1_darwin_amd64.tar.gz"
+      sha256 "9ebfb4e7144b6264401505798055bfd12542445774c4831d3b9986cccc973711"
 
       def install
         bin.install "neetodeploy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoDeploy/v3.6.0/neeto-deploy-cli-go_3.6.0_darwin_arm64.tar.gz"
-      sha256 "09d3bcbf597d15be3f737176522b698416059ae6b0bed9bef9aa75ff93747569"
+      url "https://downloads.neeto.com/cli/NeetoDeploy/v3.6.1/neeto-deploy-cli-go_3.6.1_darwin_arm64.tar.gz"
+      sha256 "89df55fcd2ceedba1336961d345f4628f34c2494be718ebbb2d177c107a9dfd8"
 
       def install
         bin.install "neetodeploy"
@@ -29,8 +29,8 @@ class Neetodeploy < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoDeploy/v3.6.0/neeto-deploy-cli-go_3.6.0_linux_amd64.tar.gz"
-        sha256 "035d125ff8cb9c628634c15b71a946c627764cc597e8d35008cc95e16947c07f"
+        url "https://downloads.neeto.com/cli/NeetoDeploy/v3.6.1/neeto-deploy-cli-go_3.6.1_linux_amd64.tar.gz"
+        sha256 "1f0bfafcd35277aabe4f0216b059ef711bbf00bbe7bcc6d6fd4b1297f2fbf6eb"
 
         def install
           bin.install "neetodeploy"
@@ -39,8 +39,8 @@ class Neetodeploy < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoDeploy/v3.6.0/neeto-deploy-cli-go_3.6.0_linux_arm64.tar.gz"
-        sha256 "b45365fda5eb82e663f38e42c85ca12b067042e0f4d54bda0bd9d9bd3334a1df"
+        url "https://downloads.neeto.com/cli/NeetoDeploy/v3.6.1/neeto-deploy-cli-go_3.6.1_linux_arm64.tar.gz"
+        sha256 "50effbaa4c08fbbb2e34e236714a0e5193e919eeff0a772c812a87da23e5c27c"
 
         def install
           bin.install "neetodeploy"
