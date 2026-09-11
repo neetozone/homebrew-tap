@@ -5,20 +5,20 @@
 class Neetoform < Formula
   desc "NeetoForm CLI — manage forms and submissions from the terminal"
   homepage "https://neetoform.com"
-  version "1.3.2"
+  version "1.3.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoForm/v1.3.2/neeto-form-cli_1.3.2_darwin_amd64.tar.gz"
-      sha256 "2989939e011c86d6d97fd586415fcdab98dffd9d3014561783aa756924219f63"
+      url "https://downloads.neeto.com/cli/NeetoForm/v1.3.3/neeto-form-cli_1.3.3_darwin_amd64.tar.gz"
+      sha256 "e09118c36eadb56a28e15efd488d69bc468f0e70cb4b9a4eee7e598d76c95e57"
 
       def install
         bin.install "neetoform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoForm/v1.3.2/neeto-form-cli_1.3.2_darwin_arm64.tar.gz"
-      sha256 "d0a6b6be599b43ce0229f9bff8800bb885a1424bbcd955dd4711af9620d96f86"
+      url "https://downloads.neeto.com/cli/NeetoForm/v1.3.3/neeto-form-cli_1.3.3_darwin_arm64.tar.gz"
+      sha256 "331cad0e6c5a047ee0cde6d5b15b21b1743639e547ad5df47661e3e34731e036"
 
       def install
         bin.install "neetoform"
@@ -29,8 +29,8 @@ class Neetoform < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoForm/v1.3.2/neeto-form-cli_1.3.2_linux_amd64.tar.gz"
-        sha256 "905c27b05a52994c84c87a4c8940452984ff6f6cdcc07c410f41f6588be1ba77"
+        url "https://downloads.neeto.com/cli/NeetoForm/v1.3.3/neeto-form-cli_1.3.3_linux_amd64.tar.gz"
+        sha256 "5bf07536491110b771dce4133f4d85738fac05b19bdeed2f94c545924bcf8c13"
 
         def install
           bin.install "neetoform"
@@ -39,8 +39,8 @@ class Neetoform < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoForm/v1.3.2/neeto-form-cli_1.3.2_linux_arm64.tar.gz"
-        sha256 "9c55bb256164b5bce48377ed17067597daab82c10151c18bb646e02f8214456f"
+        url "https://downloads.neeto.com/cli/NeetoForm/v1.3.3/neeto-form-cli_1.3.3_linux_arm64.tar.gz"
+        sha256 "3f998f38dcef977dddf3e647c7ca3859781b42901c2eb89a1bcd4f531dc34057"
 
         def install
           bin.install "neetoform"
