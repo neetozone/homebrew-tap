@@ -5,20 +5,20 @@
 class Neetoauth < Formula
   desc "NeetoAuth CLI — manage team members and product access from the terminal"
   homepage "https://neetoauth.com"
-  version "1.3.2"
+  version "1.3.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoAuth/v1.3.2/neeto-auth-cli_1.3.2_darwin_amd64.tar.gz"
-      sha256 "3d05df3fede57ea850c6d925d0cd7c3931349b84754ed7cd01d8b8d2a58ac67c"
+      url "https://downloads.neeto.com/cli/NeetoAuth/v1.3.3/neeto-auth-cli_1.3.3_darwin_amd64.tar.gz"
+      sha256 "334deb06e92ee111635dcb54f31244cd0d67427cb19393a4d8b23cc35c4142f6"
 
       def install
         bin.install "neetoauth"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoAuth/v1.3.2/neeto-auth-cli_1.3.2_darwin_arm64.tar.gz"
-      sha256 "2f8736eb74fb605c5a749bce011c1cf7ab70b18c9389ae1ec611b0b87c664ee1"
+      url "https://downloads.neeto.com/cli/NeetoAuth/v1.3.3/neeto-auth-cli_1.3.3_darwin_arm64.tar.gz"
+      sha256 "9fe795ef03f55fa3bdea4f5048e753943936feb431759e67f9ded84064141a6c"
 
       def install
         bin.install "neetoauth"
@@ -29,8 +29,8 @@ class Neetoauth < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoAuth/v1.3.2/neeto-auth-cli_1.3.2_linux_amd64.tar.gz"
-        sha256 "916900e504c081cb20fd71735a626a81f7e4b1a459c3daaa9c8fa2251a2ddaa3"
+        url "https://downloads.neeto.com/cli/NeetoAuth/v1.3.3/neeto-auth-cli_1.3.3_linux_amd64.tar.gz"
+        sha256 "dc36c571e1f22eca016834cd9f7b58a1d696d24802844c1501359e9730cc56a9"
 
         def install
           bin.install "neetoauth"
@@ -39,8 +39,8 @@ class Neetoauth < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoAuth/v1.3.2/neeto-auth-cli_1.3.2_linux_arm64.tar.gz"
-        sha256 "dd0724859d5eda93be1f3ae3b6ffd3ac8977222253ed2ca732f911372cecc5fa"
+        url "https://downloads.neeto.com/cli/NeetoAuth/v1.3.3/neeto-auth-cli_1.3.3_linux_arm64.tar.gz"
+        sha256 "e35221feba13cf0109cf963087ef8972c20d66bb27ce72257dbad8a8130d1b73"
 
         def install
           bin.install "neetoauth"
