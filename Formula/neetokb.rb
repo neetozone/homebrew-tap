@@ -5,20 +5,20 @@
 class Neetokb < Formula
   desc "NeetoKB CLI — manage articles, categories and search from the terminal"
   homepage "https://neetokb.com"
-  version "1.4.5"
+  version "1.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoKB/v1.4.5/neeto-kb-cli_1.4.5_darwin_amd64.tar.gz"
-      sha256 "0d37da6a90e9856380cb00ea8c06e3b1ebc81f51ecf3cf6641b0fbf9193ec1e1"
+      url "https://downloads.neeto.com/cli/NeetoKB/v1.5.0/neeto-kb-cli_1.5.0_darwin_amd64.tar.gz"
+      sha256 "69ced54715c7079722091590c2de2da83566f7c949e50440b2a4d30548186a30"
 
       def install
         bin.install "neetokb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoKB/v1.4.5/neeto-kb-cli_1.4.5_darwin_arm64.tar.gz"
-      sha256 "2316ae0931cc784cb5631a21f64c1b85091699ffba5be1d8ee03d9215d8550ea"
+      url "https://downloads.neeto.com/cli/NeetoKB/v1.5.0/neeto-kb-cli_1.5.0_darwin_arm64.tar.gz"
+      sha256 "7b6bf9a922f5f53b9c127f04271a5fbec48b0bff91631fc1dbe9be720b7cf0ca"
 
       def install
         bin.install "neetokb"
@@ -29,8 +29,8 @@ class Neetokb < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoKB/v1.4.5/neeto-kb-cli_1.4.5_linux_amd64.tar.gz"
-        sha256 "c5de42b4b93d7efccefdc21236464d78245b268ca3158ae4898f1720dea71d36"
+        url "https://downloads.neeto.com/cli/NeetoKB/v1.5.0/neeto-kb-cli_1.5.0_linux_amd64.tar.gz"
+        sha256 "537661f2ac8c7cab6fea461c69f81e44e309d364712d5430fe3a4a125f8b20e8"
 
         def install
           bin.install "neetokb"
@@ -39,8 +39,8 @@ class Neetokb < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoKB/v1.4.5/neeto-kb-cli_1.4.5_linux_arm64.tar.gz"
-        sha256 "5d68aba2ec443a0430eb9e50a77ef9cd688e843b56c0a626c97a4f9e4e9af3f9"
+        url "https://downloads.neeto.com/cli/NeetoKB/v1.5.0/neeto-kb-cli_1.5.0_linux_arm64.tar.gz"
+        sha256 "d6bbd40b57be7fd6d4a484773ae78d33a11d83cd7806c57dfa10812fb8b79c41"
 
         def install
           bin.install "neetokb"
