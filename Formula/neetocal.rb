@@ -5,20 +5,20 @@
 class Neetocal < Formula
   desc "NeetoCal CLI — manage meetings, bookings and availabilities from the terminal"
   homepage "https://neetocal.com"
-  version "1.5.4"
+  version "1.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoCal/v1.5.4/neeto-cal-cli_1.5.4_darwin_amd64.tar.gz"
-      sha256 "7e8a4ac41c5b46a4baeb0b5d64ad6887c69244a17ada46a16cb31b65523e91ee"
+      url "https://downloads.neeto.com/cli/NeetoCal/v1.6.0/neeto-cal-cli_1.6.0_darwin_amd64.tar.gz"
+      sha256 "860ffa84700acc2dc381003b444609034fc7b52888ad17860b95d3eea5023c60"
 
       def install
         bin.install "neetocal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoCal/v1.5.4/neeto-cal-cli_1.5.4_darwin_arm64.tar.gz"
-      sha256 "d915faee7401f35ab0f838efc07a8088b9ac758312d4d3e1e8803cb09bb3698c"
+      url "https://downloads.neeto.com/cli/NeetoCal/v1.6.0/neeto-cal-cli_1.6.0_darwin_arm64.tar.gz"
+      sha256 "0f3da09f6366b5eeb922d14cd8401b8c6b24554be21e9f1852300998013fb9a8"
 
       def install
         bin.install "neetocal"
@@ -29,8 +29,8 @@ class Neetocal < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoCal/v1.5.4/neeto-cal-cli_1.5.4_linux_amd64.tar.gz"
-        sha256 "e940f92c20c0141c32c18d1b21db9cf47b3ca76750639a87bfa18d259b52f8cc"
+        url "https://downloads.neeto.com/cli/NeetoCal/v1.6.0/neeto-cal-cli_1.6.0_linux_amd64.tar.gz"
+        sha256 "0a7ceb4bb48e3e7c7df98d3607ca204aa6385e9826805e72d9cb162b62e96192"
 
         def install
           bin.install "neetocal"
@@ -39,8 +39,8 @@ class Neetocal < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoCal/v1.5.4/neeto-cal-cli_1.5.4_linux_arm64.tar.gz"
-        sha256 "b04bb1f353d3623c4ba6c8753878f645a62211f1416f75e796ba0fd0487cc8bb"
+        url "https://downloads.neeto.com/cli/NeetoCal/v1.6.0/neeto-cal-cli_1.6.0_linux_arm64.tar.gz"
+        sha256 "c15cfa8e002f5563f51d49c259270af59bc34a29001965f8914f90421713040a"
 
         def install
           bin.install "neetocal"
