@@ -5,20 +5,20 @@
 class Neetoengage < Formula
   desc "NeetoEngage CLI"
   homepage "https://neetoengage.com"
-  version "1.1.1"
+  version "1.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoEngage/v1.1.1/neeto-engage-cli_1.1.1_darwin_amd64.tar.gz"
-      sha256 "3583a744b2054bab31a538e35d657db38b9d3173abc92cceccb7f1e33af0441c"
+      url "https://downloads.neeto.com/cli/NeetoEngage/v1.1.2/neeto-engage-cli_1.1.2_darwin_amd64.tar.gz"
+      sha256 "70e8b95ca94e596e16ceaa4dc9eda1fc8098a4479f34339ee6dcaced17f51f8e"
 
       def install
         bin.install "neetoengage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoEngage/v1.1.1/neeto-engage-cli_1.1.1_darwin_arm64.tar.gz"
-      sha256 "e4b82d3010c947ce643f6ad296880627f0d54f4e6b09771b28fa6333cfff9efd"
+      url "https://downloads.neeto.com/cli/NeetoEngage/v1.1.2/neeto-engage-cli_1.1.2_darwin_arm64.tar.gz"
+      sha256 "34618056798df5262e9f634cfc61213c2797173df2d566a0ec55cb5de1de7b11"
 
       def install
         bin.install "neetoengage"
@@ -29,8 +29,8 @@ class Neetoengage < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoEngage/v1.1.1/neeto-engage-cli_1.1.1_linux_amd64.tar.gz"
-        sha256 "deb2900393c6e64919f166514a5f72b0a12d025de431a94c66a4660123817bbb"
+        url "https://downloads.neeto.com/cli/NeetoEngage/v1.1.2/neeto-engage-cli_1.1.2_linux_amd64.tar.gz"
+        sha256 "0703ff4fc51c5098b2fe7e74294367c3f3f8dcb4d285e77e9cb01e07ea76db01"
 
         def install
           bin.install "neetoengage"
@@ -39,8 +39,8 @@ class Neetoengage < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoEngage/v1.1.1/neeto-engage-cli_1.1.1_linux_arm64.tar.gz"
-        sha256 "4551a150d3408be6a52e49cd96bf50ee263c9b8dfe3a4a2f4b469f96ce7db06d"
+        url "https://downloads.neeto.com/cli/NeetoEngage/v1.1.2/neeto-engage-cli_1.1.2_linux_arm64.tar.gz"
+        sha256 "12f1021586adc9bd5588ba41ba89cda78f48b6924386583d83cd1bebf6442e74"
 
         def install
           bin.install "neetoengage"
