@@ -5,20 +5,20 @@
 class Neetoreplay < Formula
   desc "NeetoReplay CLI"
   homepage "https://neetoreplay.com"
-  version "1.0.4"
+  version "1.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoReplay/v1.0.4/neeto-replay-cli_1.0.4_darwin_amd64.tar.gz"
-      sha256 "09eb802541ed5e2518cfca0f1cb486610ab2266a91fe225df49fa72b40992513"
+      url "https://downloads.neeto.com/cli/NeetoReplay/v1.0.5/neeto-replay-cli_1.0.5_darwin_amd64.tar.gz"
+      sha256 "f7ba84b902d711ef670dfd677fca330dc3f788cfc8cb63c1bef4425187003c2d"
 
       def install
         bin.install "neetoreplay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoReplay/v1.0.4/neeto-replay-cli_1.0.4_darwin_arm64.tar.gz"
-      sha256 "b7424f20d390ad24b522c7bed3a3be21bf414e77518e8e4c41bf3790b40ce817"
+      url "https://downloads.neeto.com/cli/NeetoReplay/v1.0.5/neeto-replay-cli_1.0.5_darwin_arm64.tar.gz"
+      sha256 "d2fd006632a31151ca837992e848e3e975eaf7e7deb1b46ca51dad370f1c46f4"
 
       def install
         bin.install "neetoreplay"
@@ -29,8 +29,8 @@ class Neetoreplay < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoReplay/v1.0.4/neeto-replay-cli_1.0.4_linux_amd64.tar.gz"
-        sha256 "bff0ac978cf32919106c739ad0650763b0801b4382713825e3b12e51b82e2572"
+        url "https://downloads.neeto.com/cli/NeetoReplay/v1.0.5/neeto-replay-cli_1.0.5_linux_amd64.tar.gz"
+        sha256 "49b54718b07c3d397540eb5616b006d6b4d001f6d15a6071960dbdccfc75a778"
 
         def install
           bin.install "neetoreplay"
@@ -39,8 +39,8 @@ class Neetoreplay < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoReplay/v1.0.4/neeto-replay-cli_1.0.4_linux_arm64.tar.gz"
-        sha256 "1c6b2e5af841af588f8b19569426cbdb2beb88e40f852e36140f9ec94028216a"
+        url "https://downloads.neeto.com/cli/NeetoReplay/v1.0.5/neeto-replay-cli_1.0.5_linux_arm64.tar.gz"
+        sha256 "e03f683b39b77043d9568d920f003b565719d09fcf9207c7d003900bdef94fcd"
 
         def install
           bin.install "neetoreplay"
