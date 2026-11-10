@@ -5,20 +5,20 @@
 class Neetochat < Formula
   desc "NeetoChat CLI"
   homepage "https://neetochat.com"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoChat/v1.0.0/neeto-chat-cli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "7c59012c27a7579ba29c0d5f871a8a6aa35a1ac0af01c8d85382b007c99791ab"
+      url "https://downloads.neeto.com/cli/NeetoChat/v1.0.1/neeto-chat-cli_1.0.1_darwin_amd64.tar.gz"
+      sha256 "7307f312f2406345db7c298292440218fd284ed6f9d8bff2072dd7cb5abe0907"
 
       def install
         bin.install "neetochat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoChat/v1.0.0/neeto-chat-cli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "5d109b192aa841be811cab25ee3dcf17e8b73fc34ff2e731c5ff703613f67ef0"
+      url "https://downloads.neeto.com/cli/NeetoChat/v1.0.1/neeto-chat-cli_1.0.1_darwin_arm64.tar.gz"
+      sha256 "e15d46c971443e92a6b1a75f72ce46c0e2122d7bb8b982c75c995f7ec979ab1e"
 
       def install
         bin.install "neetochat"
@@ -29,8 +29,8 @@ class Neetochat < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoChat/v1.0.0/neeto-chat-cli_1.0.0_linux_amd64.tar.gz"
-        sha256 "f5e7fef5d315d6e3a0af883f85fbd0eef8c471bc59f63057d8aab531cdc932c1"
+        url "https://downloads.neeto.com/cli/NeetoChat/v1.0.1/neeto-chat-cli_1.0.1_linux_amd64.tar.gz"
+        sha256 "732e4aca6c37b86488bda4ad15e3d66f58585ed8d42347c9a5fa964316b9555a"
 
         def install
           bin.install "neetochat"
@@ -39,8 +39,8 @@ class Neetochat < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoChat/v1.0.0/neeto-chat-cli_1.0.0_linux_arm64.tar.gz"
-        sha256 "97c6e19f0c15bbe233362a6b70a83007197d862b1d10cd4518f28f1de0915310"
+        url "https://downloads.neeto.com/cli/NeetoChat/v1.0.1/neeto-chat-cli_1.0.1_linux_arm64.tar.gz"
+        sha256 "eced0c43624d63d16bcea06796202f43f3a7a6aa98571f5313ac646f0bf6bad3"
 
         def install
           bin.install "neetochat"
