@@ -5,20 +5,20 @@
 class Neetoci < Formula
   desc "NeetoCI CLI — manage projects, CI jobs and environment variables from the terminal"
   homepage "https://neetoci.com"
-  version "1.2.4"
+  version "1.2.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://downloads.neeto.com/cli/NeetoCI/v1.2.4/neeto-ci-cli-v2_1.2.4_darwin_amd64.tar.gz"
-      sha256 "47f1bfdc34bbeb3a938e3243768a36152b221d154274c4a1a79be01e9e58cbd2"
+      url "https://downloads.neeto.com/cli/NeetoCI/v1.2.5/neeto-ci-cli-v2_1.2.5_darwin_amd64.tar.gz"
+      sha256 "e175360e27637d7c8801634c8d4290fe343d23fbba1a6d63e82dbf440e3ddf03"
 
       def install
         bin.install "neetoci"
       end
     end
     if Hardware::CPU.arm?
-      url "https://downloads.neeto.com/cli/NeetoCI/v1.2.4/neeto-ci-cli-v2_1.2.4_darwin_arm64.tar.gz"
-      sha256 "58aaf6cd7b85369cc84f68848d9a7d62b5b7ec4e3ff446ab5c5db16f0a3cd8e1"
+      url "https://downloads.neeto.com/cli/NeetoCI/v1.2.5/neeto-ci-cli-v2_1.2.5_darwin_arm64.tar.gz"
+      sha256 "1984c2da96a799c98f08f1569e79868183354bdfba2cb46ab440115d02571b90"
 
       def install
         bin.install "neetoci"
@@ -29,8 +29,8 @@ class Neetoci < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoCI/v1.2.4/neeto-ci-cli-v2_1.2.4_linux_amd64.tar.gz"
-        sha256 "f88c13c29ab2a9b22f62d2433c2d286a49c3cc721de9a9aaed4cc12e12082b30"
+        url "https://downloads.neeto.com/cli/NeetoCI/v1.2.5/neeto-ci-cli-v2_1.2.5_linux_amd64.tar.gz"
+        sha256 "cd0f80954b53df4e2b9b0b28e4f07b89d6e390329feb03c9630a65e50e1fbeab"
 
         def install
           bin.install "neetoci"
@@ -39,8 +39,8 @@ class Neetoci < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://downloads.neeto.com/cli/NeetoCI/v1.2.4/neeto-ci-cli-v2_1.2.4_linux_arm64.tar.gz"
-        sha256 "c93aefbd3c1237a6dba39ead9129c3aea596af65a245a3a2d05abcf7bcc924dc"
+        url "https://downloads.neeto.com/cli/NeetoCI/v1.2.5/neeto-ci-cli-v2_1.2.5_linux_arm64.tar.gz"
+        sha256 "bc736c3561760790114419b66f6f563cb9fbe66e87b068bfcdc8a094b3434bf9"
 
         def install
           bin.install "neetoci"
